@@ -1,0 +1,60 @@
+.temple-select {
+  box-sizing: border-box;
+  width: 100%;
+  .search-bar {
+    height: 100px;
+    .at-search-bar__input-cnt {
+      height: 100%;
+      .at-search-bar__input {
+        top: 20%;
+      }
+    }
+  }
+
+  .link-box {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    .link {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      flex-basis: 100%;
+      margin: 10px 20px;
+      padding: 10px 40px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      min-height: 140px;
+      background-color: #fff;
+      .link-word {
+        display: flex;
+        &-left {
+          align-items: center;
+          color: #a3a3ab;
+          font-size: 32px;
+          &-icon {
+            margin-right: 10px;
+            font-size: 80px;
+          }
+        }
+        &-right {
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+          flex-shrink: 0;
+          justify-content: center;
+          align-items: center;
+          color: #c0c0c0;
+        }
+      }
+    }
+  }
+}
+
+.not-found {
+  width: 100%;
+  text-align: center;
+}

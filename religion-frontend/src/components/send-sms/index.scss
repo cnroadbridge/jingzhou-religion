@@ -1,0 +1,38 @@
+.sms-box {
+  width: 100%;
+  background-color: #fff;
+}
+
+.row-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  &-col-7 {
+    display: flex;
+    flex-basis: 70%;
+  }
+  &-col-3 {
+    display: flex;
+    flex-basis: 30%;
+  }
+}
+
+.btn-submit {
+  margin: 40px;
+}
+
+// fix
+.code-fix {
+  border: 0 solid #d6e4ef;
+  border-bottom-width: 1px;
+  padding: 22px;
+}
+
+.red {
+  color: red;
+}
+
+.at-input__title {
+  text-align: right;
+  padding-right: 20px;
+}

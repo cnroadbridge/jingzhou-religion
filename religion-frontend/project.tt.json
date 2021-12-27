@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "religion-frontend",
+  "description": "jingzhou religion frontend project with react and taro",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

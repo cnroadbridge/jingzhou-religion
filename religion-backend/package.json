@@ -1,0 +1,81 @@
+{
+  "name": "religion-backend",
+  "version": "1.0.0",
+  "description": "religion backend project for jingzhou with eggjs",
+  "private": true,
+  "egg": {
+    "declarations": true,
+    "tsHelper": {
+      "watchDirs": {
+        "enum": {
+          "enabled": true,
+          "directory": "app/enum",
+          "declareTo": "Application.enum"
+        },
+        "util": {
+          "enabled": true,
+          "directory": "app/util",
+          "declareTo": "Application.util"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "dayjs": "^1.10.7",
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
+    "egg-jsonp": "^2.0.0",
+    "egg-logger": "^2.6.2",
+    "egg-ratelimiter": "^0.1.0",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-ts-helper": "^1.27.0",
+    "egg-validate": "^2.0.2",
+    "egg-view-nunjucks": "^2.3.0",
+    "mysql2": "^2.3.0",
+    "qs": "^6.10.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-religion-backend",
+    "stop": "egg-scripts stop --title=egg-server-religion-backend",
+    "dev": "egg-bin dev --port=9000",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "pm2": "pm2 start server.js --name taro-server --env ecosystem.config.js"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "ataola(zjt613@gmail.com)",
+  "license": "MIT"
+}

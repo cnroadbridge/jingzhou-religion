@@ -1,0 +1,11 @@
+.result-query {
+  box-sizing: border-box;
+  width: 100%;
+  &-tip {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 28px;
+    margin: 20px auto;
+  }
+}
